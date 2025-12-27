@@ -1,0 +1,23 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: task-manager-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - TASKS_DB_PATH=/data/tasks.db
+    volumes:
+      - tasks_data:/data
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: task-manager-frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+volumes:
+  tasks_data:
