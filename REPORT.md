@@ -67,7 +67,7 @@ CRUD API:
 
 Скриншоты лежат в папке `screenshots/` репозитория.
 
-- Главная: ![Главная](screenshots/01-home.png)
+
 - Главная: ![Главная](screenshots/01-home.jpg)
 - Список задач: ![Список задач](screenshots/02-tasks-list.jpg)
 - Фильтрация/сортировка: ![Фильтрация и сортировка](screenshots/03-filter-sort.jpg)
